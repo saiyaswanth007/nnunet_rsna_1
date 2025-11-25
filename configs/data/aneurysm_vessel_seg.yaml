@@ -3,7 +3,7 @@ _target_: src.data.rsna_aneurysm_vessel_seg_datamodule.RSNAAneurysmVesselSegData
 vessel_pred_dir: ${paths.data_dir}/nnUNet_inference/predictions_v4
 train_csv: ${paths.data_dir}/train.csv
 
-batch_size: 1
+batch_size: 8
 num_workers: 12
 pin_memory: True
 persistent_workers: True

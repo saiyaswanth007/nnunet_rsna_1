@@ -5,6 +5,9 @@ import hydra
 import lightning as L
 import rootutils
 import torch
+# ENABLE TF32 FOR A100
+torch.backends.cuda.matmul.allow_tf32 = True
+torch.backends.cudnn.allow_tf32 = True
 from lightning import Callback, LightningDataModule, LightningModule, Trainer
 from lightning.pytorch.loggers import Logger
 from omegaconf import DictConfig
