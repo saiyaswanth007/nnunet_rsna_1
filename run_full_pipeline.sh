@@ -70,17 +70,7 @@ nnUNetv2_plan_and_preprocess -d 1 --verify_dataset_integrity -pl nnUNetPlannerRe
 
 # Dataset 3 (Special handling for lowres)
 nnUNetv2_plan_and_preprocess -d 3 --verify_dataset_integrity -pl nnUNetPlannerResEncMForcedLowres -overwrite_target_spacing 1.0 1.0 1.0 -c 3d_fullres
-https://www.kaggle.com/code/tomoon33/rsna2025-submission-1st-place/input
 
-https://www.kaggle.com/datasets/tomoon33/251013-prev6-1-ex-dav6w3-e25-w01-005-1-s128-256
-
-https://www.kaggle.com/datasets/tomoon33/nnunet-da3-sklr-ep800
-
-https://www.kaggle.com/datasets/tomoon33/nnunet-da3-sklr-with-all
-
-https://www.kaggle.com/datasets/tomoon33/nnunet-da6-1-sklr-tv07
-https://www.kaggle.com/datasets/tomoon33/nnunet-da6-sklr-w3-tv07
-https://www.kaggle.com/datasets/tomoon33/nnunet-vessel-grouping-da7
 # Dataset 3 Patch Size Fix (Manual step automated here via sed if needed, but assuming default plan works or user edited it)
 # NOTE: The README says "In Dataset003 plans.json, set patch_size to [128, 128, 128]".
 # We will attempt to patch this automatically using python to be safe.
